@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Board</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+    header {
+      background-color: gray;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main.job-board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .job-card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .job-card h2 {
+      margin-top: 0;
+    }
+    .apply-btn {
+      display: inline-block;
+      margin-top: 18px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .apply-btn:hover {
+      background-color: blue;
+    }
+    footer {
+      background-color: white;
+      border-top: 1px solid milkywhite;
+      color: gray;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 Job Board</h1>
+  </header>
+
+  <main class="job-board">
+    <div class="job-card">
+      <h2>Frontend Developer</h2>
+      <p>Company: WebTech Solutions</p>
+      <p>Location: Bangalore, India</p>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h2>Backend Developer</h2>
+      <p>Company: CloudNova</p>
+      <p>Location: Pune, India</p>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h2>UI/UX Designer</h2>
+      <p>Company: Creative Minds</p>
+      <p>Location: Remote</p>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Job Board. All rights reserved.</p>
+  </footer>
+</body>
+</html>
